@@ -26,11 +26,6 @@ vector< pii > G[MAX];
 int D[MAX];
 bool F[MAX];
 
-
-
-
-
-
 int main() 
 {
     int i, u, v, w, sz, nodes, edges, starting;
@@ -44,9 +39,6 @@ int main()
         G[v].pb(pii(u, w)); // for undirected
      }
     
-
-
-    
     //scanf("%d", &starting);
      starting=1;
     // initialize distance vector
@@ -56,11 +48,6 @@ int main()
  
  
  
- 
- 
- 
-
-
 
     // dijkstra
     while(!Q.empty()){
@@ -90,3 +77,11 @@ int main()
     for(i=1; i<=nodes; i++) printf("Node %d, min weight = %d\n", i, D[i]);
     return 0;
 }
+
+/*
+if ( x )
+
+is equivalent to
+
+if ( x != 0 )
+*/
